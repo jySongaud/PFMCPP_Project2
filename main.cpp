@@ -13,14 +13,13 @@ video: Chapter 2 - Part 3
  
  1) Write down the names of all of the primitives available in C++ (excluding wchar_t)
  put them here: 
- 
- 
- 
- 
- 
- 
- 
- 
+ bool
+ char
+ int
+ float
+ double
+ void
+
  
  
  
@@ -63,9 +62,53 @@ void variableDeclarations()
     //example:
     int number = 2; //declaration of a primitive named 'number' with an initial value of '2'
     
-    
-    
     ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+
+    bool today = Tuesday;
+    ignoreUnused(today);
+    bool price = unknown;
+    ignoreUnused(price);  
+    bool greeting = hello;
+    ignoreUnused(greeting);
+
+    int Rachel = 3;
+    ignoreUnused(Rachel);
+    int Score = 89;
+    ignoreUnused(Score);
+    int limitation = 1000;
+    ignoreUnused(limitation);
+    
+    char mark = 'A';
+    ignoreUnused(mark);
+    char initial = 'd';
+    ignoreUnused(initial);
+    char level = '3';
+    ignoreUnused(level);
+
+    double result = 8.89384848;
+    ignoreUnused(result);
+    double declination = 4.345;
+    ignoreUnused(declination);
+    double data = 898.3636;
+    ignoreUnused(data);
+
+    float snack = 3.78;
+    ignoreUnused(snack);
+    float calories = 500.3;
+    ignoreUnused(calories);
+    float gpa = 4.77;
+    ignoreUnused(gpa);
+    
+    int Rachel = 3;
+    ignoreUnused(Rachel);
+    int Score = 89;
+    ignoreUnused(Score);
+    int limitation = 1000;
+    ignoreUnused(limitation);
+
+
+
+
 }
 /*
  10 functions
@@ -80,43 +123,85 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
-
+ int coke(int volume, bool material = A)
+ {
+     ignoreUnused(volume, material);
+     return {};
+    
+ }
 /*
  2)
  */
+float temperature(double south, double north, double west, double east)
+{
+    ignoreUnused(south, north, west, east=67.885);
+    return{};
+}
 
+}
 /*
  3)
  */
-
+char name(char firstName, char lastName)
+{
+    ignoreUnused(firstName,lastName);
+    return{};
+}
 /*
  4)
  */
-
+bool Assignment(int quarter, int course, bool keypoint)
+{
+    ignoreUunsed(quarter, course, keypoint);
+    return{};
+}
 /*
  5)
  */
-
+double price(double discount, double originalPrice)
+{
+    ignoreUnused(discount, originalPrice);
+    return{};
+}
 /*
  6)
  */
-
+double fuel(int fuelType, double gallon)
+{
+    ignoreUnused(fuelType, gallon);
+    return{};
+}
 /*
  7)
  */
-
+bool TVSeries(char name,int season, int episode)
+{
+    ignoreUnused(season, episode);
+    return{}
+}
 /*
  8)
  */
-
+bool insurance(int lengthOfTime, char insuranceType )
+{
+    ignoreUnused(lengthOfTime, insuranceType);
+    return{};
+}
 /*
  9)
  */
-
+bool family(int numberOfChildren, char conditionOfMarriage, int incomeOfAYear )
+{
+    ignoreUnused(numberOfChildren, conditionOfMarriage, incomeOFAYear);
+    return{};
+}
 /*
  10)
  */
-
+void DaysOfCountdown(bool dateOfSetting, bool dateOfToday)
+{
+    ignoreUnused(dateOfSetting, dateOfToday)
+}
 int main()
 {
     //example of calling that function, storing the value, and passing it to ignoreUnused at the end of main()
