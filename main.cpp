@@ -64,11 +64,11 @@ void variableDeclarations()
     
     ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
 
-    bool today = Tuesday;
+    bool today = 1;
     ignoreUnused(today);
-    bool price = unknown;
+    bool price = 1;
     ignoreUnused(price);  
-    bool greeting = hello;
+    bool greeting = 7;
     ignoreUnused(greeting);
 
     int Rachel = 3;
@@ -78,11 +78,11 @@ void variableDeclarations()
     int limitation = 1000;
     ignoreUnused(limitation);
     
-    char mark = 'A';
+    char mark = 99;
     ignoreUnused(mark);
-    char initial = 'd';
+    char initial = 88;
     ignoreUnused(initial);
-    char level = '3';
+    char level = 89;
     ignoreUnused(level);
 
     double result = 8.89384848;
@@ -92,19 +92,21 @@ void variableDeclarations()
     double data = 898.3636;
     ignoreUnused(data);
 
-    float snack = 3.78;
+    float snack = 3.70;
     ignoreUnused(snack);
-    float calories = 500.3;
+    float calories = 500.30;
     ignoreUnused(calories);
-    float gpa = 4.77;
+    float gpa = 4.70;
     ignoreUnused(gpa);
     
-    int Rachel = 3;
-    ignoreUnused(Rachel);
-    int Score = 89;
-    ignoreUnused(Score);
-    int limitation = 1000;
-    ignoreUnused(limitation);
+
+    unsigned int invitees = 5;
+    ignoreUnused(invitees);
+    unsigned int sandwiches = 5;
+    ignoreUnused(sandwiches);
+    unsigned int populationOfTheCity = 45939902;
+    ignoreUnused(populationOfTheCity);
+
 
 
 
@@ -123,7 +125,7 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
- int coke(int volume, bool material = A)
+ int coke(int volume, bool material = 2)
  {
      ignoreUnused(volume, material);
      return {};
@@ -138,7 +140,7 @@ float temperature(double south, double north, double west, double east)
     return{};
 }
 
-}
+
 /*
  3)
  */
@@ -150,9 +152,9 @@ char name(char firstName, char lastName)
 /*
  4)
  */
-bool Assignment(int quarter, int course, bool keypoint)
+bool assignment(int quarter, int course, bool keypoint)
 {
-    ignoreUunsed(quarter, course, keypoint);
+    ignoreUnused(quarter, course, keypoint);
     return{};
 }
 /*
@@ -174,10 +176,10 @@ double fuel(int fuelType, double gallon)
 /*
  7)
  */
-bool TVSeries(char name,int season, int episode)
+bool TVSeries(char nameOfTVSeries, int season, int episode)
 {
-    ignoreUnused(season, episode);
-    return{}
+    ignoreUnused(nameOfTVSeries, season, episode);
+    return{};
 }
 /*
  8)
@@ -190,17 +192,17 @@ bool insurance(int lengthOfTime, char insuranceType )
 /*
  9)
  */
-bool family(int numberOfChildren, char conditionOfMarriage, int incomeOfAYear )
+bool family(int numberOfChildren, int incomeOfAYear)
 {
-    ignoreUnused(numberOfChildren, conditionOfMarriage, incomeOFAYear);
+    ignoreUnused(numberOfChildren,  incomeOfAYear);
     return{};
 }
 /*
  10)
  */
-void DaysOfCountdown(bool dateOfSetting, bool dateOfToday)
+void DaysOfCountdown(int dateOfSetting, int dateOfToday)
 {
-    ignoreUnused(dateOfSetting, dateOfToday)
+    ignoreUnused(dateOfSetting, dateOfToday);
 }
 int main()
 {
@@ -208,27 +210,33 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
+    auto populationAnalysis = family(3, 2);
     
     //2)
-    
+    auto signIn = name('A', 'B');
     //3)
+    auto forecast = temperature(5.66, 7.5, 45.45, 65.34);
     
     //4)
+    auto beverage = coke(2, 8);
     
     //5)
-    
+    auto saleRecord = price(14.4, 0.75);
     //6)
-    
+    auto addFuel = fuel(2, 8.8);
     //7)
-    
+    auto rubrics = assignment(2, 5, 0);
     //8)
-    
+    auto search = TVSeries('C', 5, 8);
     //9)
-    
+    auto protection = insurance(500, 288);
     //10)
+    void Birthday = DaysOfCountdown(25, 74);
+    //I have a error here and I don't know hoe to fix it//
+    //for the float type, why does it warn me? How can I fix it?
     
-    
-    ignoreUnused(carRented);
+    ignoreUnused(carRented, populationAnalysis, signIn, forecast, beverage, saleRecord, addFuel, rubrics, search, protection, Birthday);
     std::cout << "good to go!" << std::endl;
-    return 0;    
+    return 0;
+   
 }
