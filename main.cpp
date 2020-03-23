@@ -90,7 +90,7 @@ void variableDeclarations()
     unsigned int sandwiches = 5;
     unsigned int populationOfTheCity = 45939902;
     
-    ignoreUnused(today, price, greeting, Rachel, Score, limitation, mark, intial, level, result, declination, data, snack, calories, gpa, invitees, sandwiches,  populationOfTheCity);
+    ignoreUnused(today, price, greeting, Rachel, Score, limitation, mark, initial, level, result, declination, data, snack, calories, gpa, invitees, sandwiches,  populationOfTheCity);
 
 
 
@@ -216,13 +216,13 @@ int main()
     //9)
     auto protection = insurance(500, 288);
     //10)
-    void Birthday = DaysOfCountdown(25, 74);
+    
     //I have a error here and I don't know hoe to fix it//
     //for the float type, why does it warn me? How can I fix it?
 
-
+    DaysOfCountdown(25, 74);
     
-    ignoreUnused(carRented, populationAnalysis, signIn, forecast, beverage, saleRecord, addFuel, rubrics, search, protection, Birthday);
+    ignoreUnused(carRented, populationAnalysis, signIn, forecast, beverage, saleRecord, addFuel, rubrics, search, protection, DaysOfCountdown);
     std::cout << "good to go!" << std::endl;
     return 0;
    
