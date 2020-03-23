@@ -65,47 +65,32 @@ void variableDeclarations()
     ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
 
     bool today = 1;
-    ignoreUnused(today);
-    bool price = 1;
-    ignoreUnused(price);  
+    bool price = 1; 
     bool greeting = 7;
-    ignoreUnused(greeting);
 
     int Rachel = 3;
-    ignoreUnused(Rachel);
     int Score = 89;
-    ignoreUnused(Score);
     int limitation = 1000;
-    ignoreUnused(limitation);
     
     char mark = 99;
-    ignoreUnused(mark);
     char initial = 88;
-    ignoreUnused(initial);
     char level = 89;
-    ignoreUnused(level);
 
     double result = 8.89384848;
-    ignoreUnused(result);
     double declination = 4.345;
-    ignoreUnused(declination);
     double data = 898.3636;
-    ignoreUnused(data);
+
 
     float snack = 3.70;
-    ignoreUnused(snack);
     float calories = 500.30;
-    ignoreUnused(calories);
     float gpa = 4.70;
-    ignoreUnused(gpa);
     
 
     unsigned int invitees = 5;
-    ignoreUnused(invitees);
     unsigned int sandwiches = 5;
-    ignoreUnused(sandwiches);
     unsigned int populationOfTheCity = 45939902;
-    ignoreUnused(populationOfTheCity);
+    
+    ignoreUnused(today, price, greeting, Rachel, Score, limitation, mark, intial, level, result, declination, data, snack, calories, gpa, invitees, sandwiches,  populationOfTheCity);
 
 
 
@@ -152,7 +137,7 @@ char name(char firstName, char lastName)
 /*
  4)
  */
-bool assignment(int quarter, int course, bool keypoint)
+bool assignment(int quarter = 2, int course = 603, bool keypoint = 1)
 {
     ignoreUnused(quarter, course, keypoint);
     return{};
@@ -160,7 +145,7 @@ bool assignment(int quarter, int course, bool keypoint)
 /*
  5)
  */
-double price(double discount, double originalPrice)
+double price(double discount = 0.60, double originalPrice = 89.88)
 {
     ignoreUnused(discount, originalPrice);
     return{};
@@ -168,7 +153,7 @@ double price(double discount, double originalPrice)
 /*
  6)
  */
-double fuel(int fuelType, double gallon)
+double fuel(int fuelType = 93, double gallon = 8.98)
 {
     ignoreUnused(fuelType, gallon);
     return{};
@@ -176,7 +161,7 @@ double fuel(int fuelType, double gallon)
 /*
  7)
  */
-bool TVSeries(char nameOfTVSeries, int season, int episode)
+bool TVSeries(char nameOfTVSeries, int season, int episode = 3)
 {
     ignoreUnused(nameOfTVSeries, season, episode);
     return{};
@@ -184,7 +169,7 @@ bool TVSeries(char nameOfTVSeries, int season, int episode)
 /*
  8)
  */
-bool insurance(int lengthOfTime, char insuranceType )
+bool insurance(int lengthOfTime, char insuranceType = 'A' )
 {
     ignoreUnused(lengthOfTime, insuranceType);
     return{};
@@ -192,7 +177,7 @@ bool insurance(int lengthOfTime, char insuranceType )
 /*
  9)
  */
-bool family(int numberOfChildren, int incomeOfAYear)
+bool family(int numberOfChildren, int incomeOfAYear = 230000)
 {
     ignoreUnused(numberOfChildren,  incomeOfAYear);
     return{};
@@ -200,7 +185,7 @@ bool family(int numberOfChildren, int incomeOfAYear)
 /*
  10)
  */
-void DaysOfCountdown(int dateOfSetting, int dateOfToday)
+void DaysOfCountdown(int dateOfSetting, int dateOfToday = 235)
 {
     ignoreUnused(dateOfSetting, dateOfToday);
 }
@@ -234,6 +219,8 @@ int main()
     void Birthday = DaysOfCountdown(25, 74);
     //I have a error here and I don't know hoe to fix it//
     //for the float type, why does it warn me? How can I fix it?
+
+
     
     ignoreUnused(carRented, populationAnalysis, signIn, forecast, beverage, saleRecord, addFuel, rubrics, search, protection, Birthday);
     std::cout << "good to go!" << std::endl;
