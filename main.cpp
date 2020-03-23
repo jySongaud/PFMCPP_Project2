@@ -217,12 +217,10 @@ int main()
     auto protection = insurance(500, 288);
     //10)
     
-    //I have a error here and I don't know hoe to fix it//
-    //for the float type, why does it warn me? How can I fix it?
 
     DaysOfCountdown(25, 74);
     
-    ignoreUnused(carRented, populationAnalysis, signIn, forecast, beverage, saleRecord, addFuel, rubrics, search, protection, DaysOfCountdown);
+    ignoreUnused(carRented, populationAnalysis, signIn, forecast, beverage, saleRecord, addFuel, rubrics, search, protection);
     std::cout << "good to go!" << std::endl;
     return 0;
    
