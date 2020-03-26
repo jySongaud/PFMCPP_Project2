@@ -81,9 +81,9 @@ void variableDeclarations()
     double data = 898.3636;
 
 
-    float snack = 3.70;
-    float calories = 500.30;
-    float gpa = 4.70;
+    float snack = 3.70f;
+    float calories = 500.30f;
+    float gpa = 4.70f;
     
 
     unsigned int invitees = 5;
@@ -214,7 +214,7 @@ int main()
     //8)
     auto search = TVSeries('C', 5, 8);
     //9)
-    auto protection = insurance(500, 288);
+    auto protection = insurance(500, 'B');
     //10)
     
 
