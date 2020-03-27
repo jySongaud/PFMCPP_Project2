@@ -110,12 +110,12 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
- int coke(int volume, bool material = 2)
- {
-     ignoreUnused(volume, material);
-     return {};
-    
- }
+int coke(int volume, bool material = 2)
+{
+    ignoreUnused(volume, material);
+    return {};
+
+}
 /*
  2)
  */
