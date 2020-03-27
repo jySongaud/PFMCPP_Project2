@@ -67,35 +67,22 @@ void variableDeclarations()
     bool today = 1;
     bool price = 1; 
     bool greeting = 7;
-
     int Rachel = 3;
     int Score = 89;
-    int limitation = 1000;
-    
+    int limitation = 1000;  
     char mark = 99;
     char initial = 88;
     char level = 89;
-
     double result = 8.89384848;
     double declination = 4.345;
     double data = 898.3636;
-
-
     float snack = 3.70f;
     float calories = 500.30f;
     float gpa = 4.70f;
-    
-
     unsigned int invitees = 5;
     unsigned int sandwiches = 5;
-    unsigned int populationOfTheCity = 45939902;
-    
+    unsigned int populationOfTheCity = 45939902;   
     ignoreUnused(today, price, greeting, Rachel, Score, limitation, mark, initial, level, result, declination, data, snack, calories, gpa, invitees, sandwiches,  populationOfTheCity);
-
-
-
-
-
 }
 /*
  10 functions
@@ -124,8 +111,6 @@ float temperature(double south, double north, double west, double east)
     ignoreUnused(south, north, west, east=67.885);
     return{};
 }
-
-
 /*
  3)
  */
@@ -196,15 +181,12 @@ int main()
     
     //1)
     auto populationAnalysis = family(3, 2);
-    
     //2)
     auto signIn = name('A', 'B');
     //3)
     auto forecast = temperature(5.66, 7.5, 45.45, 65.34);
-    
     //4)
     auto beverage = coke(2, 8);
-    
     //5)
     auto saleRecord = price(14.4, 0.75);
     //6)
@@ -216,10 +198,7 @@ int main()
     //9)
     auto protection = insurance(500, 'B');
     //10)
-    
-
     DaysOfCountdown(25, 74);
-    
     ignoreUnused(carRented, populationAnalysis, signIn, forecast, beverage, saleRecord, addFuel, rubrics, search, protection);
     std::cout << "good to go!" << std::endl;
     return 0;
